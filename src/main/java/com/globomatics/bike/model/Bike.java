@@ -1,10 +1,11 @@
 package com.globomatics.bike.model;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.io.Serializable;
 import java.math.BigDecimal;
 import java.util.Date;
 
@@ -12,7 +13,9 @@ import java.util.Date;
  * Created by b010nsm on 19/03/2019.
  */
 @Entity
-public class Bike implements Serializable{
+@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+public class Bike{
+
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -22,6 +25,7 @@ public class Bike implements Serializable{
     private String model;
     private String serialNumber;
     private BigDecimal purchasePrice;
+    @JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "MM-dd-yyyy")
     private Date purchaseDate;
     private boolean contact;
 

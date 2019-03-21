@@ -35,8 +35,8 @@ public class BikeController {
          bikeRepository.save(bike);
      }
 
-     @GetMapping("/id")
-     public Bike getBike(@PathVariable("id") Long id){
+     @GetMapping("/{id}")
+     public Bike getBike(@PathVariable("id") long id){
          return bikeRepository.getOne(id);
      }
 }
