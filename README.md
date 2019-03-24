@@ -1,6 +1,7 @@
 # JavaeeSpringBootAngular
 
-Angular command </br>
+Angular command : </br>
+
 ng new [name]
 That’s the default usage of the command and creating a new project folder with [name]. The project which is created in that folder is containing:
 
