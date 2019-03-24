@@ -23,4 +23,10 @@ This command is generating the component new files.
 
 
 The type of Angular form that we're setting up is a reactive form. 
-Angular provides two form techniques; one is the reactive form, the other is the template-driven form
+Angular provides two form techniques; one is the reactive form, the other is the template-driven form </br>
+
+npm install bootstrap@4.0.0-beta.2 --save </br>
+npm install @angular-devkit/core --save </br>
+npm install express-http-proxy --save </br>
+node server.js
+ 
