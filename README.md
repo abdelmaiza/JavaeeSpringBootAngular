@@ -2,7 +2,7 @@
 
 Angular command : </br>
 
-ng new [name]
+ng new [name] </br>
 That’s the default usage of the command and creating a new project folder with [name]. The project which is created in that folder is containing:
 
 The default Angular project </br>
