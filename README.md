@@ -14,5 +14,13 @@ ng new bike-ui --routing </br>
 Executing this command generated an additional file app-routing.module.ts in the src/appfolder
 
 ng set --global packageManager=yarn </br>
+
+
 ng g service service/bike </br>
+
 ng g component component/home </br>
+This command is generating the component new files.
+
+
+The type of Angular form that we're setting up is a reactive form. 
+Angular provides two form techniques; one is the reactive form, the other is the template-driven form
