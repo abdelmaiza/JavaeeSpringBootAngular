@@ -9,6 +9,15 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 
 import com.auth0.spring.security.api.JwtWebSecurityConfigurer;
 
+/**
+ * @Configuration tells it, Spring Boot, that this is a configuration class and should be
+ * run when the container is started so that any configuration can occur at that time
+ *
+ * @EnableWebSecurity is another Spring Boot tab that is saying, go ahead and enable
+ * security for the applicationand anything defined in the class down below is how
+ * we'll secure the application
+ */
+
 @EnableWebSecurity
 @Configuration
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
